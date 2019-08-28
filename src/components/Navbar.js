@@ -12,7 +12,7 @@ const Navbar = () => {
                         <a exact to="/">Home</a>
                     </li>
                     <li>
-                        <a to="/all">All</a>
+                        <a to="/all" exact="true">All</a>
                     </li>
                     <li>
                         <a to="/women">Women</a>
@@ -21,7 +21,7 @@ const Navbar = () => {
                         <a to="/men">Men</a>
                     </li>
                     <li>
-                        <div class="carttotal" v-if="cartCount > 0">3</div>
+                        <div className="carttotal" v-if="cartCount > 0">3</div>
                         <a to="/cart">Cart</a>
                     </li>
                 </ul>
