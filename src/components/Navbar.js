@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -9,20 +10,20 @@ const Navbar = () => {
            <nav>
                 <ul>
                     <li>
-                        <a exact to="/">Home</a>
+                        <NavLink exact to="/">Home</NavLink>
                     </li>
                     <li>
-                        <a to="/all" exact="true">All</a>
+                        <NavLink to="/all" exact="true">All</NavLink>
                     </li>
                     <li>
-                        <a to="/women">Women</a>
+                        <NavLink to="/women">Women</NavLink>
                     </li>
                     <li>
-                        <a to="/men">Men</a>
+                        <NavLink to="/men">Men</NavLink>
                     </li>
                     <li>
                         <div className="carttotal" v-if="cartCount > 0">3</div>
-                        <a to="/cart">Cart</a>
+                        <NavLink to="/cart">Cart</NavLink>
                     </li>
                 </ul>
             </nav>
