@@ -1,12 +1,8 @@
 import React from 'react';
 
-const All = () => {
-    return (
+const All = () => 
         <div>
-            <h1>You are in all</h1>
-            
+            <p>You are in all</p>
         </div>
-    );
-}
 
 export default All;
