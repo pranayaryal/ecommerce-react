@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
+
 
 const Navbar = () => {
 
@@ -16,10 +17,10 @@ const Navbar = () => {
                         <NavLink to="/all" exact="true">All</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/women">Women</NavLink>
+                        <NavLink to="/Women">Women</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/men">Men</NavLink>
+                        <NavLink to="/Men">Men</NavLink>
                     </li>
                     <li>
                         <div className="carttotal" v-if="cartCount > 0">3</div>

@@ -3,13 +3,11 @@ import SaleBoxes from './SaleBoxes'
 import FeaturedProducts from './FeaturedProducts';
 import TextLockUp from './TextLockUp'
 
-import { ProductProvider } from '../context';
 
 const Home = () => {
     return (
         <div>
             <main>
-            <ProductProvider>
                 <TextLockUp
                 new="new"
                 sale="Mens Shoes"
@@ -26,7 +24,6 @@ const Home = () => {
                 image="bag"
                 />
                 <FeaturedProducts />
-            </ProductProvider>
             </main>
             
         </div>

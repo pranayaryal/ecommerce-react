@@ -7,9 +7,25 @@ const ProductProvider = props => {
 
     const [ products, setProducts ] = useState(storeProducts);
 
+    const getMale = () => {
+        return products.filter(el => el.gender === "Male")
+    }
+
+    const getFemale = () => {
+        return products.filter(el => el.gender === "Female")
+    }
+
+    const getProduct = id => {
+        return products.filter(el => el.id === id)[0]
+    }
+
+
     return (
         <ProductContext.Provider value={{
-            products
+            products,
+            getMale,
+            getFemale,
+            getProduct
         }}
         >
             {props.children}

@@ -8,21 +8,30 @@ import All from './components/All';
 import Women from './components/Women';
 import Men from './components/Men';
 import Cart from './components/Cart';
+import Product from './components/Product';
 import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
+import { ProductProvider } from './context';
+import StoreGrid from './components/StoreGrid';
 
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/all" component={All} />
-          <Route path="/women" component={Women} />
-          <Route path="/men" component={Men} />
-          <Route path="/cart" component={Cart} />
-        </Switch>
+        <ProductProvider>
+          <Navbar />
+          <Switch>
+            <main>
+            <Route exact path="/" component={Home} />
+            <Route path="/all" component={All} />
+            <Route path="/women" component={Women} />
+            <Route path="/men" component={Men} />
+            <Route path="/cart" component={Cart} />
+              <Route path="/product/:id" component={Product} />
+              {/* <Route path="/:gender" component={StoreGrid} /> */}
+            </main>
+          </Switch>
+        </ProductProvider>
         <Footer />
       </BrowserRouter>
 
