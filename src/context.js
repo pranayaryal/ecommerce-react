@@ -5,7 +5,9 @@ const ProductContext = React.createContext();
 
 const ProductProvider = props => {
 
-    const [ products, setProducts ] = useState(storeProducts);
+    const [products, setProducts] = useState(storeProducts);
+
+    const [ cart, setCart ] = useState([]);
 
     const getMale = () => {
         return products.filter(el => el.gender === "Male");
@@ -20,15 +22,28 @@ const ProductProvider = props => {
     }
 
     const getProductsFromParam = param => {
-      if (param === "all"){
-        return products;
-      }
-      else {
-        console.log(products.filter(el => el.gender === param));
-        return products.filter(el => el.gender === param);
-      }
+        if (param === "all") {
+            return products;
+        }
+        else {
+            return products.filter(el => el.gender === param);
+        }
 
     }
+
+    const addToCart = id => {
+
+        let tempProducts = [...products]
+        const index = tempProducts.indexOf(getProduct(id))
+        const product = tempProducts[index]
+        product.count = 1
+        const price = product.price
+        product.total = price
+        setCart([...cart, product])
+
+    }
+
+
 
 
     return (
@@ -37,7 +52,9 @@ const ProductProvider = props => {
             getMale,
             getFemale,
             getProduct,
-            getProductsFromParam
+            getProductsFromParam,
+            addToCart,
+            cart
         }}
         >
             {props.children}

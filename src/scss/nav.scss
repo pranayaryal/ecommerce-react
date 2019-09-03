@@ -23,17 +23,18 @@ nav {
             display: inline;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            padding-right: 10px;
-            padding-left: 10px;
-            font-size: 14px;
+            font-size: 13px;
+            padding: 0 20px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            position: relative;
+            margin: 2px;
 
             a {
-                color: black;
+                color: black !important;
 
                 &:hover {
-                    color: #c14103;
+                    color: #c14103 !important;
                 }
             }
         }
@@ -47,8 +48,8 @@ nav {
     color: white;
     font-size: 10px;
     padding: 3px;
-    top: 127px;
-    right: 756px;
+    top: -18px;
+    right: -5px;
     width: 25px;
     text-align: center;
     height: 25px;
@@ -58,7 +59,10 @@ nav {
 }
 
 @media screen and (max-width: 850px) {
-    h1 { margin: 0 }
+    h1 {
+        margin: 0
+    }
+
     nav ul li {
         padding: 0 5px !important;
         border-left: none !important;

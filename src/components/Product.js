@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ProductConsumer } from '../context';
 
 const Product = ({ match }) => {
-    console.log(match.params.id)
+    const id = match.params.id;
+    const [ quantity, setQuantity ] = useState(1);
+
+    const decrementQuantity = () => {
+        quantity > 0 ? setQuantity(quantity - 1) : setQuantity(0)
+    }
+
     return (
         <div>
             <ProductConsumer>
@@ -19,9 +25,9 @@ const Product = ({ match }) => {
                                     <p>{product.description}</p>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit dolores repudiandae animi quidem, eveniet quod dolor facilis dicta eligendi ullam error. Assumenda in fugiat natus enim similique nam itaque.</p>
                                     <p className="quantity">
-                                        <button className="update-num">-</button>
-                                        <input type="number" />
-                                        <button className="update-num">+</button>
+                                        <button className="update-num" onClick={decrementQuantity}>-</button>
+                                        <input type="number" value={quantity}/>
+                                        <button className="update-num" onClick={e => setQuantity(quantity + 1)}>+</button>
                                     </p>
                                     <p>
                                         Available in additional colors:
@@ -30,7 +36,7 @@ const Product = ({ match }) => {
                                         </strong>
                                     </p>
                                     <p>
-                                        <button className="button purchase">Add To Cart</button>
+                                        <button className="button purchase" onClick={() => value.addToCart(id)}>Add To Cart</button>
                                     </p>
                                 </section>
                             </section>

@@ -22,13 +22,13 @@ const App = () => {
           <Navbar />
           <Switch>
             <main>
-            <Route exact path="/" component={Home} />
-            {/* <Route path="/all" component={All} /> */}
-            {/* <Route path="/women" component={Women} /> */}
-            {/* <Route path="/men" component={Men} /> */}
-            <Route path="/cart" component={Cart} />
+              <Route exact path="/" component={Home} />
+              {/* <Route path="/all" component={All} /> */}
+              {/* <Route path="/women" component={Women} /> */}
+              {/* <Route path="/men" component={Men} /> */}
+              <Route exact path="/cart" component={Cart} />
+              <Route exact path="/:gender" component={StoreGrid} />
               <Route path="/product/:id" component={Product} />
-              <Route path="/:gender" component={StoreGrid} />
             </main>
           </Switch>
         </ProductProvider>

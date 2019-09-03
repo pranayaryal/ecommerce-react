@@ -8,7 +8,9 @@ export const storeProducts = [
     "review": "productize virtual markets",
     "starrating": 3,
     "price": 50.4,
-    "img": "1.jpg"
+    "img": "1.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "bfa86b1c-9ebf-4555-987f-7b8bf7d27be7",
@@ -19,7 +21,9 @@ export const storeProducts = [
     "review": "deploy efficient mindshare",
     "starrating": 4,
     "price": 33.99,
-    "img": "2.jpg"
+    "img": "2.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "eca6b1c7-6b8c-4416-aae0-98cecdc18e92",
@@ -30,7 +34,9 @@ export const storeProducts = [
     "review": "mesh sticky content",
     "starrating": 3,
     "price": 102.99,
-    "img": "3.jpg"
+    "img": "3.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "440e2eac-67ed-4407-993a-d9f6b7f15087",
@@ -41,7 +47,9 @@ export const storeProducts = [
     "review": "integrate front-end infomediaries",
     "starrating": 5,
     "price": 64.5,
-    "img": "4.jpg"
+    "img": "4.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "38543b28-3b0e-4886-a108-b58419bcef94",
@@ -52,7 +60,9 @@ export const storeProducts = [
     "review": "integrate extensible methodologies",
     "starrating": 5,
     "price": 30.99,
-    "img": "5.png"
+    "img": "5.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "3d16728f-4b1d-449a-b002-4dc23f32c0cd",
@@ -63,7 +73,9 @@ export const storeProducts = [
     "review": "utilize end-to-end functionalities",
     "starrating": 4,
     "price": 19.99,
-    "img": "6.png"
+    "img": "6.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "0d5c91e6-8dbe-4c5b-b9fa-9e82986b1bdc",
@@ -74,7 +86,9 @@ export const storeProducts = [
     "review": "enable cutting-edge e-services",
     "starrating": 3,
     "price": 130.0,
-    "img": "7.png"
+    "img": "7.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "80175256-93a1-41b8-9895-a890ed0c61d1",
@@ -85,7 +99,9 @@ export const storeProducts = [
     "review": "innovate sexy portals",
     "starrating": 4,
     "price": 120.99,
-    "img": "8.png"
+    "img": "8.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "b5438034-168a-4b51-9d2e-dd9fc336a242",
@@ -96,7 +112,9 @@ export const storeProducts = [
     "review": "transform robust mindshare",
     "starrating": 5,
     "price": 20.99,
-    "img": "9.png"
+    "img": "9.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "a5f39b32-e103-4e4a-ab73-0f719817b455",
@@ -107,7 +125,9 @@ export const storeProducts = [
     "review": "benchmark synergistic bandwidth",
     "starrating": 3,
     "price": 50.0,
-    "img": "10.jpg"
+    "img": "10.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "19bdee56-525a-4cb7-bfeb-c6f46b6d639a",
@@ -118,7 +138,9 @@ export const storeProducts = [
     "review": "repurpose robust e-business",
     "starrating": 4,
     "price": 65.0,
-    "img": "11.png"
+    "img": "11.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "f8b11f7c-1306-4658-a66c-d1704e728349",
@@ -129,7 +151,9 @@ export const storeProducts = [
     "review": "redefine 24/365 eyeballs",
     "starrating": 3,
     "price": 72.0,
-    "img": "12.png"
+    "img": "12.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "14fcaf19-465e-4275-8c2e-c69219e68f8c",
@@ -140,7 +164,9 @@ export const storeProducts = [
     "review": "empower sticky web-readiness",
     "starrating": 4,
     "price": 59.99,
-    "img": "13.png"
+    "img": "13.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "b1913a24-2556-4414-87cd-c6dcc3b98b53",
@@ -151,7 +177,9 @@ export const storeProducts = [
     "review": "deliver end-to-end solutions",
     "starrating": 5,
     "price": 49.99,
-    "img": "14.png"
+    "img": "14.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "143badca-e3f0-452f-b973-c3917a5f0f70",
@@ -162,7 +190,9 @@ export const storeProducts = [
     "review": "orchestrate value-added infrastructures",
     "starrating": 4,
     "price": 100.0,
-    "img": "15.png"
+    "img": "15.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "5cdef591-6b7f-4511-b59f-d0f55bdceeb9",
@@ -173,7 +203,9 @@ export const storeProducts = [
     "review": "revolutionize vertical systems",
     "starrating": 5,
     "price": 33.99,
-    "img": "16.jpg"
+    "img": "16.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "0bdf8654-7d44-46f5-bb1f-115b16b42344",
@@ -184,7 +216,9 @@ export const storeProducts = [
     "review": "architect real-time partnerships",
     "starrating": 3,
     "price": 13.99,
-    "img": "17.png"
+    "img": "17.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "a89719a0-4ee2-4ba0-8a75-12a1654a66b1",
@@ -195,7 +229,9 @@ export const storeProducts = [
     "review": "innovate holistic markets",
     "starrating": 4,
     "price": 12.99,
-    "img": "18.jpg"
+    "img": "18.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "8aa13b42-b074-43d2-8dcc-f3f1010f3adb",
@@ -206,7 +242,9 @@ export const storeProducts = [
     "review": "facilitate innovative portals",
     "starrating": 3,
     "price": 154.99,
-    "img": "19.png"
+    "img": "19.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "c8b03500-5f07-4fb3-a933-1ee205ccd903",
@@ -217,7 +255,9 @@ export const storeProducts = [
     "review": "unleash synergistic models",
     "starrating": 5,
     "price": 33.99,
-    "img": "1.jpg"
+    "img": "1.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "85641bb6-04e5-4393-be3e-1d4dea46cd54",
@@ -228,7 +268,9 @@ export const storeProducts = [
     "review": "unleash strategic platforms",
     "starrating": 4,
     "price": 50.99,
-    "img": "2.jpg"
+    "img": "2.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "1c8665b9-87cd-40d4-bc90-b28943825bd0",
@@ -239,7 +281,9 @@ export const storeProducts = [
     "review": "orchestrate visionary paradigms",
     "starrating": 4,
     "price": 50.99,
-    "img": "3.jpg"
+    "img": "3.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "e0bce42b-e2cf-4aa2-805b-f4bbd8517d2a",
@@ -250,7 +294,9 @@ export const storeProducts = [
     "review": "enhance rich initiatives",
     "starrating": 4,
     "price": 19.99,
-    "img": "4.jpg"
+    "img": "4.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "cc6998b6-4150-4234-b678-28460afc3a91",
@@ -261,7 +307,9 @@ export const storeProducts = [
     "review": "benchmark mission-critical convergence",
     "starrating": 5,
     "price": 110.0,
-    "img": "5.png"
+    "img": "5.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "69d95efa-af3a-40d2-8da1-1c8f8700a131",
@@ -272,7 +320,9 @@ export const storeProducts = [
     "review": "aggregate granular systems",
     "starrating": 3,
     "price": 19.99,
-    "img": "6.png"
+    "img": "6.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "ab614297-fff2-4b34-bcf5-bc3c10127c63",
@@ -283,7 +333,9 @@ export const storeProducts = [
     "review": "transition granular markets",
     "starrating": 3,
     "price": 190.99,
-    "img": "7.png"
+    "img": "7.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "18d4cd08-134f-4df5-a19a-b782a59ae52b",
@@ -294,7 +346,9 @@ export const storeProducts = [
     "review": "generate customized e-services",
     "starrating": 4,
     "price": 20.0,
-    "img": "8.png"
+    "img": "8.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "92f8048f-3ee2-4428-96b0-66fd54b6e98f",
@@ -305,7 +359,9 @@ export const storeProducts = [
     "review": "e-enable viral web services",
     "starrating": 3,
     "price": 15.99,
-    "img": "9.png"
+    "img": "9.png",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "4cee7b59-30dd-4378-b1c0-e4ad055a6a19",
@@ -316,7 +372,9 @@ export const storeProducts = [
     "review": "recontextualize B2B markets",
     "starrating": 3,
     "price": 190.0,
-    "img": "10.jpg"
+    "img": "10.jpg",
+    "count": 0,
+    "total": 0
   },
   {
     "id": "f92c7d89-78e9-4616-8876-e0088c53483e",
@@ -327,6 +385,8 @@ export const storeProducts = [
     "review": "architect collaborative initiatives",
     "starrating": 3,
     "price": 35.99,
-    "img": "11.png"
+    "img": "11.png",
+    "count": 0,
+    "total": 0
   }
 ]
