@@ -6,34 +6,33 @@ const StoreGrid = ({ match }) => {
     const [pricerange, setPricerange] = useState(200);
     const [min, setMin] = useState(0);
     const [max, setMax] = useState(100);
-    console.log('you are in storegrid')
 
     const handlePriceRange = e => {
-        setPricerange(e.target.value)
-        console.log(pricerange);
+        setPricerange(e.target.value);
     }
 
     return (
         <div className="storegrid">
             <section className="content">
                 <ProductConsumer>
-                    {value => value.products.
-                        filter(e => e.gender = match.params.gender)
-                        .map(product =>
-                            <div className="item" key={product.id}>
-                                <div className="img-contain">
-                                    <img src={require(`../static/products/${product.img}`)} />
-                                </div>
-                                <h3>{product.name}</h3>
-                                <h4 className="price">{product.price}</h4>
-                                <Link to={`/product/${product.id}`}>
-                                    <button className="multi-item">View Item ></button>
-                                </Link>
+                    {value => {
+                       const products = value.getProductsFromParam(match.params.gender);
+                       products.map(product => 
+                            // <div className="item" key={product.id}>
+                            //     <div className="img-contain">
+                            //         <img src={require(`../static/products/${product.img}`)} />
+                            //     </div>
+                            //     <h3>{product.name}</h3>
+                            //     <h4 className="price">{product.price}</h4>
+                            //     <Link to={`/product/${product.id}`}>
+                            //         <button className="multi-item">View Item ></button>
+                            //     </Link>
+                            // </div>
+                            <h1>Hello</h1>
+                       )
                                 
-                            </div>
-                        )
 
-                    }
+                    }}
                 </ProductConsumer>
             </section>
             <aside>

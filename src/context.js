@@ -8,15 +8,26 @@ const ProductProvider = props => {
     const [ products, setProducts ] = useState(storeProducts);
 
     const getMale = () => {
-        return products.filter(el => el.gender === "Male")
+        return products.filter(el => el.gender === "Male");
     }
 
     const getFemale = () => {
-        return products.filter(el => el.gender === "Female")
+        return products.filter(el => el.gender === "Female");
     }
 
     const getProduct = id => {
         return products.filter(el => el.id === id)[0]
+    }
+
+    const getProductsFromParam = param => {
+      if (param === "all"){
+        return products;
+      }
+      else {
+        console.log(products.filter(el => el.gender === param));
+        return products.filter(el => el.gender === param);
+      }
+
     }
 
 
@@ -25,7 +36,8 @@ const ProductProvider = props => {
             products,
             getMale,
             getFemale,
-            getProduct
+            getProduct,
+            getProductsFromParam
         }}
         >
             {props.children}

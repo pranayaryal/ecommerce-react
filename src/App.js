@@ -23,12 +23,12 @@ const App = () => {
           <Switch>
             <main>
             <Route exact path="/" component={Home} />
-            <Route path="/all" component={All} />
-            <Route path="/women" component={Women} />
-            <Route path="/men" component={Men} />
+            {/* <Route path="/all" component={All} /> */}
+            {/* <Route path="/women" component={Women} /> */}
+            {/* <Route path="/men" component={Men} /> */}
             <Route path="/cart" component={Cart} />
               <Route path="/product/:id" component={Product} />
-              {/* <Route path="/:gender" component={StoreGrid} /> */}
+              <Route path="/:gender" component={StoreGrid} />
             </main>
           </Switch>
         </ProductProvider>

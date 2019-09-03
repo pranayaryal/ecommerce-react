@@ -17,10 +17,10 @@ const Navbar = () => {
                         <NavLink to="/all" exact="true">All</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Women">Women</NavLink>
+                        <NavLink to="/Female">Women</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Men">Men</NavLink>
+                        <NavLink to="/Male">Men</NavLink>
                     </li>
                     <li>
                         <div className="carttotal" v-if="cartCount > 0">3</div>

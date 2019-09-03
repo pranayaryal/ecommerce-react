@@ -42,7 +42,7 @@ const StoreGrid = ({ match }) => {
                     <h3>Special Sale</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p>
                     <h3>Filter by Price:</h3>
-                    <p style={{ 'margin-top': '5px' }}>
+                    <p style={{ 'marginTop': '5px' }}>
                         Max Price
                     <strong>{pricerange}</strong>
                     </p>
