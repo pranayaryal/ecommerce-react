@@ -1,9 +1,14 @@
 import React from 'react';
+import CartSteps from './CartSteps';
+import CartDisplay from './CartDisplay';
 
-const Cart = () => 
+const Cart = () =>
     <div>
-        <p>Yo are in cart</p>
-        
+        <CartSteps />
+        <hr />
+        <CartDisplay />
+
+
     </div>
 
 export default Cart;
