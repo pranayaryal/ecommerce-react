@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProductConsumer } from '../context';
+import { Link } from 'react-router-dom';
 
 const FeaturedProducts = () => {
     return (
@@ -14,11 +15,11 @@ const FeaturedProducts = () => {
                             <img src={require(`../static/products/${product.img}`)} />
                             <h3>{product.name}</h3>
                             <h4>{product.price}</h4>
-                            <a href="/id">
+                            <Link to={`/product/${product.id}`}>
                                 <button className="multi-item">
                                     View Item >
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     )
                     }
