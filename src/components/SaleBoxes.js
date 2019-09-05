@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Cal from '../static/icon-cal.svg'
 import Package from '../static/icon-package.svg'
 import Service from '../static/icon-service.svg'

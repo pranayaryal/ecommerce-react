@@ -12,6 +12,8 @@ $brandsecondary: #03c1c1;
 @import './scss/slider.scss';
 @import './scss/product.scss';
 @import './scss/cartsteps.scss';
+@import './scss/cartdisplay.scss';
+@import './scss/card.scss';
 
 
 /*------------Global---------------*/
@@ -221,7 +223,7 @@ aside {
   main {
     padding: 40px;
     width: 80vw;
-    margin-left: 7vw;
+    margin-left: 2vw;
   }
 }
 

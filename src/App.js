@@ -1,12 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import Home from './components/Home';
-import All from './components/All';
-import Women from './components/Women';
-import Men from './components/Men';
 import Cart from './components/Cart';
 import Product from './components/Product';
 import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
