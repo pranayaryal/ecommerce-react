@@ -43,6 +43,11 @@ const ProductProvider = props => {
 
     }
 
+    const submitToStripe = async(props) => {
+        let { token } = await props.stripe.createToken({ name: 'Name' });
+        console.log(token)
+    }
+
 
 
 
@@ -54,7 +59,8 @@ const ProductProvider = props => {
             getProduct,
             getProductsFromParam,
             addToCart,
-            cart
+            cart,
+            submitToStripe
         }}
         >
             {props.children}
