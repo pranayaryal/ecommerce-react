@@ -2,6 +2,8 @@ import React from 'react';
 import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
 
+import featuredproductsStyle from './featuredproducts.module.scss';
+
 const FeaturedProducts = () => {
     return (
         <div>

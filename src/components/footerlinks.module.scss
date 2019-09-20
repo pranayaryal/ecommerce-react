@@ -10,13 +10,13 @@
         padding-left: 0;
     }
 
-    input {
-        width: 100%;
-    }
-
     @media screen and (min-width: 850px) {
         .footerlinks {
             padding: 40px !important;
         }
     }
+}
+
+.footerLinkInput {
+    width: 100%;
 }

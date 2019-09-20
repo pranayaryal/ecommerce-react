@@ -20,7 +20,9 @@ const StoreGrid = ({ match }) => {
                        return products.map(product => 
                             <div className="item" key={product.id}>
                                  <div className="img-contain">
+                                 <Link to={`/product/${product.id}`}>
                                      <img src={require(`../static/products/${product.img}`)} />
+                                 </Link>
                                  </div>
                                  <h3>{product.name}</h3>
                                  <h4 className="price">{product.price}</h4>

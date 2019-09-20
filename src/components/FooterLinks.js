@@ -1,8 +1,10 @@
 import React from 'react';
 
+import footerlinkStyle from './footerlinks.module.scss';
+
 const FooterLinks = () => {
     return (
-        <section className="footerlinks">
+        <section className={footerlinkStyle.footerlinks}>
             <ul>
                 <li>About</li>
                 <li>Company</li>
@@ -18,7 +20,7 @@ const FooterLinks = () => {
             </ul>
             <ul>
                 <h4>Newsletter</h4>
-                <input type="text" />
+                <input className={footerlinkStyle.footerLinkInput} type="text" />
             </ul>
         </section>
             

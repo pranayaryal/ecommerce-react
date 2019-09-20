@@ -3,18 +3,20 @@ import { StripeProvider, Elements, injectStripe, CardElement } from 'react-strip
 import { ProductConsumer } from '../context';
 import InjectedCardElement from './InjectedCardElement';
 
+import cardStyles from './card.module.scss';
+
 
 const Card = () => {
     return (
 
         <div id="card-div">
-            <div className="card-payment">
+            <div className={cardStyles.cardPayment}>
                 <h3>Please enter your payment details:</h3>
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <br />
-                <input type="email" id="email" placeholder="name@example.com" />
+                <input className={cardStyles.emailInput} type="email" id="email" placeholder="name@example.com" />
                 <br />
-                <label for="card">Credit Card</label>
+                <label htmlFor="card">Credit Card</label>
                 <br />
                 <small>
                     Test using this card:

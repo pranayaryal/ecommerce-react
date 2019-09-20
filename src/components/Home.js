@@ -7,7 +7,6 @@ import TextLockUp from './TextLockUp'
 const Home = () => {
     return (
         <div>
-            <main>
                 <TextLockUp
                 new="new"
                 sale="Mens Shoes"
@@ -24,7 +23,6 @@ const Home = () => {
                 image="bag"
                 />
                 <FeaturedProducts />
-            </main>
             
         </div>
     );

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer';
 import Home from './components/Home';
 import Cart from './components/Cart';
+
+import Layout from './components/Layout';
 import Product from './components/Product';
-import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { ProductProvider } from './context';
 import StoreGrid from './components/StoreGrid';
 
@@ -15,9 +15,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <ProductProvider>
-          <Navbar />
-          <Switch>
-            <main>
+          <Layout>
               <Route exact path="/" component={Home} />
               {/* <Route path="/all" component={All} /> */}
               {/* <Route path="/women" component={Women} /> */}
@@ -25,10 +23,8 @@ const App = () => {
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/:gender" component={StoreGrid} />
               <Route exact path="/product/:id" component={Product} />
-            </main>
-          </Switch>
-        </ProductProvider>
-        <Footer />
+          </Layout>
+          </ProductProvider>
       </BrowserRouter>
 
     </div>
