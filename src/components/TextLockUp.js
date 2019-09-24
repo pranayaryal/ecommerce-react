@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import Shoe from '../static/shoe1.jpg';
+
+import textlockupStyles from './textlockup.module.scss';
 
 const TextLockUp = props => {
 
@@ -13,14 +13,14 @@ const TextLockUp = props => {
     ]
 
     return (
-        <div className="textlockup">
-            <div className="img">
+        <div className={textlockupStyles.textlockup}>
+            <div className={textlockupStyles.img}>
                 <img src={require(`../static/${props.image}.jpg`)} alt="Shoe" />
             </div>
-            <div className="new">{ props.new }</div>
-            <div className="sale">{ props.sale }</div>
-            <div className="collection">{ props.collection }</div>
-            <div className="details">{ props.details }</div>
+            <div className={textlockupStyles.new}>{ props.new }</div>
+            <div className={textlockupStyles.sale}>{ props.sale }</div>
+            <div className={textlockupStyles.collection}>{ props.collection }</div>
+            <div className={textlockupStyles.details}>{ props.details }</div>
         </div>
 
     );

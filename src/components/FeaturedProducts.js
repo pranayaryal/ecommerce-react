@@ -7,13 +7,13 @@ import featuredproductsStyle from './featuredproducts.module.scss';
 const FeaturedProducts = () => {
     return (
         <div>
-            <section className="featuredproducts">
+            <section className={featuredproductsStyle.featuredProducts}>
                 <h2><span>Featured Products</span></h2>
             </section>
-            <div className="featureditems">
+            <div className={featuredproductsStyle.featureditems}>
                 <ProductConsumer>
-                    {value => value.products.slice(0, 3).map(product =>
-                        <div className="item" key={product.id}>
+                    {value => value.products.slice(3, 6).map(product =>
+                        <div className={featuredproductsStyle.item} key={product.id}>
                             <img src={require(`../static/products/${product.img}`)} />
                             <h3>{product.name}</h3>
                             <h4>{product.price}</h4>

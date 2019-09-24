@@ -3,6 +3,9 @@ import Cal from '../static/icon-cal.svg'
 import Package from '../static/icon-package.svg'
 import Service from '../static/icon-service.svg'
 
+import saleboxesStyle from './saleboxes.module.scss';
+
+
 const SaleBoxes = () => {
     const boxes = [
         {
@@ -23,12 +26,12 @@ const SaleBoxes = () => {
       ];
     return (
         <div>
-            <section className="boxes">
+            <section className={saleboxesStyle.boxes}>
               {
                 boxes.map((box,ix) => 
                   <div className={`box${ix + 1}`} key={ix}>
                     <img src={ require(`../static/${box.icon}`)} alt="service icon" />
-                    <h4>{ box.heading }</h4>
+                    <h4 className={saleboxesStyle.heading}>{ box.heading }</h4>
                     <p>{ box.details }</p>
                   </div>
                 )

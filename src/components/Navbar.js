@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import { NavLink, Route } from 'react-router-dom'
 import { ProductConsumer } from '../context';
 
+import navStyles from './navbar.module.scss';
+
 
 const Navbar = () => {
 
     return (
-        <header>
+        <header className={navStyles.headerClass}>
             <h1>Skyline Ivy</h1>
-            <nav>
+            <nav className={navStyles.navClass}>
                 <ul>
                     <li>
                         <NavLink to="/">Home</NavLink>
@@ -28,7 +30,7 @@ const Navbar = () => {
                             const cartLength = Object.keys(value.cart).length;
                             if (cartLength > 0) {
                                 return <li>
-                                    <div className="carttotal" >{Object.keys(value.cart).length}</div>
+                                    <div className={navStyles.carttotal} >{Object.keys(value.cart).length}</div>
                                     <NavLink to="/cart">Cart</NavLink>
                                 </li>
 

@@ -29,7 +29,7 @@ const StoreGrid = ({ match }) => {
                                 <Link to={`/product/${product.id}`}>
                                     <button className="multi-item">View Item ></button>
                                 </Link>
-                                
+
                             </div>
                         )
 
@@ -44,14 +44,16 @@ const StoreGrid = ({ match }) => {
                     Max Price
                     <strong>{pricerange}</strong>
                 </p>
-                <input type="range"
-                    className="slider"
-                    id="pricerange"
-                    step="0.1"
-                    min="0"
-                    max="200"
-                    onChange={handlePriceRange}
-                />
+                <ProductConsumer>
+                    <input type="range"
+                        className="slider"
+                        id="pricerange"
+                        step="0.1"
+                        min="0"
+                        max="200"
+                        onChange={handlePriceRange}
+                    />
+                </ProductConsumer>
                 <span className="min">{min}</span>
                 <span className="max">{max}</span>
             </aside>

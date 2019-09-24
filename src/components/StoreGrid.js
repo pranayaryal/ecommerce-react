@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
 
+import storegridStyles from './storegrid.module.scss';
+
 const StoreGrid = ({ match }) => {
     const [pricerange, setPricerange] = useState(200);
     const [min, setMin] = useState(0);
@@ -18,8 +20,8 @@ const StoreGrid = ({ match }) => {
                     {value => {
                        const products = value.getProductsFromParam(match.params.gender);
                        return products.map(product => 
-                            <div className="item" key={product.id}>
-                                 <div className="img-contain">
+                            <div className={storegridStyles.item} key={product.id}>
+                                 <div className={storegridStyles.imgContain}>
                                  <Link to={`/product/${product.id}`}>
                                      <img src={require(`../static/products/${product.img}`)} />
                                  </Link>
@@ -38,7 +40,7 @@ const StoreGrid = ({ match }) => {
                     }}
                 </ProductConsumer>
             </section>
-            <aside>
+            <aside className={storegridStyles.storeAside}>
                 <h3>Special Sale</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p>
                 <h3>Filter by Price:</h3>

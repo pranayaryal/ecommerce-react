@@ -1,4 +1,4 @@
-.featuredproducts {
+.featuredProducts {
     margin-top: 60px;
 
     h2 {
@@ -54,17 +54,18 @@
 
 
 
-    .item {
-        border: 1px solid #eee2dc;
-        box-shadow: 0 3px 10px 0px #eee;
-        border-radius: 40px;
-        padding: 10px 20px 30px;
-        min-height: 150px;
-        justify-self: center;
-        align-self: center;
-        text-align: center;
+}
 
-    }
+.item {
+    border: 1px solid #eee2dc;
+    box-shadow: 0 3px 10px 0px #eee;
+    border-radius: 40px;
+    padding: 10px 20px 30px;
+    min-height: 150px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 699px) {
