@@ -23,12 +23,20 @@ const ProductProvider = props => {
 
     const getProductsFromParam = param => {
         if (param === "all") {
-            return products;
+            let allProducts = products
+            setProducts(allProducts);
         }
         else {
-            return products.filter(el => el.gender === param);
+            let filteredProducts = products.filter(el => el.gender === param);
+            setProducts(filteredProducts)
+            // let filteredProducts = products.filter(el => el.gender === param)
+            // setProducts(filteredProducts);
         }
 
+    }
+
+    const handlePriceRange = (max) => {
+        return (products.filter(el => el.price < max ))
     }
 
     const addToCart = id => {
@@ -59,7 +67,8 @@ const ProductProvider = props => {
             getProductsFromParam,
             addToCart,
             cart,
-            submitToStripe
+            submitToStripe,
+            handlePriceRange
         }}
         >
             {props.children}

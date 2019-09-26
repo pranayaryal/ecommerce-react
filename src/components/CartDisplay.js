@@ -1,66 +1,67 @@
 import React from 'react';
+
 import { ProductConsumer } from '../context';
-import Card from './Card';
+import Payment from './Payment'
+
+import { Link } from 'react-router-dom';
+import cartdisplayStyles from './cartdisplay.module.scss';
 
 const CartDisplay = () => {
     return (
-        <section className="cartdisplay">
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                </tr>
-                <ProductConsumer>
-                    {value => {
-                        const { cart } = value;
-                        return cart.map(item =>
-                            <tr>
-                                <td>
-                                    <img src={require(`../static/products/${item.img}`)} className="productimg"
-                                    />
-                                    <h3 className="productname">{item.name}</h3>
-                                </td>
-                                <td>
-                                    <h4 className="price">{item.price}</h4>
-                                </td>
-                                <td>
-                                    <strong>{item.count}</strong>
-                                </td>
-                                <td>{item.count * item.price}</td>
+        <ProductConsumer>
+            {value => {
+                const { cart } = value;
+                console.log(cart.length)
+                if (cart.length > 0) {
+                    return (<section className="cartdisplay">
+                        <table className={cartdisplayStyles.carttable}>
+                            <tr className={cartdisplayStyles.tablerow}>
+                                <th className={cartdisplayStyles.tableheading}>Product</th>
+                                <th className={cartdisplayStyles.tableheading}>Price</th>
+                                <th className={cartdisplayStyles.tableheading}>Quantity</th>
+                                <th className={cartdisplayStyles.tableheading}>Total</th>
                             </tr>
-                        );
+                            {
+                                cart.map(item =>
+                                    <tr className={cartdisplayStyles.tablerow}>
+                                        <td className={cartdisplayStyles.tabledata}>
+                                            <img src={require(`../static/products/${item.img}`)} className="productimg"
+                                            />
+                                            <h3 className="productname">{item.name}</h3>
+                                        </td>
+                                        <td className={cartdisplayStyles.tabledata}>
+                                            <h4 className="price">{item.price}</h4>
+                                        </td>
+                                        <td className={cartdisplayStyles.tabledata}>
+                                            <strong>{item.count}</strong>
+                                        </td>
+                                        <td className={cartdisplayStyles.tabledata}>
+                                            {item.count * item.price}
+                                        </td>
+                                    </tr>
+                                )
 
-                    }
-                    }
-                </ProductConsumer>
+                            }
 
-            </table>
-            <section className="payment">
-                <Card />
-                <div className="total">
-                    <div className="caption">
-                        <p>
-                            <strong>Subtotal:</strong>
-                        </p>
-                        <p>Shipping</p>
-                        <p className='golden'>Total:</p>
+                        </table>
+                        <Payment />
+                    </section>);
+                } else {
+                    return <div>
+                        <section className="center">
+                            <p>Your cart is empty, fill it up!</p>
+                            <button className="pay-with-stripe">
+                                <Link exact to="/">Back Home</Link>
+                            </button>
+                        </section>
+                        <Payment />
                     </div>
-                    <div className="num">
-                        <p>
-                            <strong>10</strong>
-                        </p>
-                        <p>Free Shipping</p>
-                        <p className="golden">100</p>
-                    </div>
-                </div>
-
-            </section>
-        </section>
+                }
+            }
+            }
+        </ProductConsumer>
 
     );
 }
-
 
 export default CartDisplay;

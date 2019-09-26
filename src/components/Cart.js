@@ -1,7 +1,7 @@
 import React from 'react';
 import CartSteps from './CartSteps';
 // import CartDisplay from './CartDisplay';
-import CartDisplayTesting from './CartDisplayTesting';
+import CartDisplay from './CartDisplay';
 
 const Cart = () =>
     <div>
@@ -9,7 +9,7 @@ const Cart = () =>
         <hr />
         <h1 className="center">Your Cart</h1>
         {/* <CartDisplay /> */}
-        <CartDisplayTesting />
+        <CartDisplay />
 
 
     </div>
