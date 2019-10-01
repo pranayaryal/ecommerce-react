@@ -24,13 +24,12 @@ const ProductProvider = props => {
     const getProductsFromParam = param => {
         if (param === "all") {
             let allProducts = products
-            setProducts(allProducts);
+            return allProducts;
+
         }
         else {
             let filteredProducts = products.filter(el => el.gender === param);
-            setProducts(filteredProducts)
-            // let filteredProducts = products.filter(el => el.gender === param)
-            // setProducts(filteredProducts);
+            return filteredProducts;
         }
 
     }

@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
 import storegridStyles from './storegrid.module.scss';
-import { ProductConsumer } from '../context';
 
 const Aside = (props) => {
 
     const [min, setMin] = useState(0);
     const [max, setMax] = useState(100);
     const [rangeValue, setRangeValue] = useState(200);
-    console.log('you are in storegrid')
-
-    const handleRange = e => {
-        // setRangeValue(e.target.value)
-        // console.log(rangeValue)
-        setRangeValue(e.target.value)
-        return props.cart.handlePriceRange(rangeValue)
-    }
 
     return (
 
@@ -32,9 +23,8 @@ const Aside = (props) => {
                 step="0.1"
                 min="0"
                 max="200"
-                value={rangeValue}
-
-                onChange={handleRange}
+                defaultValue={rangeValue}
+                onChange={e => props.setPriceRange(e.target.value)}
             />
             <span className="max">{max}</span>
         </aside>
