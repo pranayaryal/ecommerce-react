@@ -22,7 +22,7 @@ const Card = () => {
                     Test using this card:
                     <span className="cc-number">4242 4242 4242 4242</span>, and enter any 5 digits for the zip code
 
-                    <StripeProvider apiKey="pk_test_j8RzazkDnk8i4oaguikkv4gO">
+                    <StripeProvider apiKey="{key}">
                         <Elements>
                             <InjectedCardElement />
                         </Elements>
